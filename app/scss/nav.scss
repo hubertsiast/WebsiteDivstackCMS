@@ -1,0 +1,109 @@
+.main-header{
+    .contact-wrapper{
+        background: #343434;
+        padding: 8px 0;
+        &>div{
+            display: flex;
+            justify-content: space-between;
+        }
+        .contact-informations{
+            .contact-information a{
+                color: #ffffff;
+                opacity: .2;
+                transition: opacity .3s;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .page-header{
+        padding: 23px 0px;
+        border-top: 1px solid #d4d4d4;
+        border-bottom: 1px solid #d4d4d4;
+        >div{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .page-logo{
+            height: 40px;
+            &__item{
+                height: 40px;
+            }
+        }
+        .page-nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+            .main-nav{
+                margin: 0;
+                padding: 0;
+                display: none;
+            }
+            &.is-open{
+                .main-nav{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    background: #000000;
+                    height: 100vh;
+                    width: 100vw;
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    .page-nav__item{
+                        text-align: center;
+                        font-size: 23px;
+                        padding-bottom: 1rem;
+                    }
+                }
+                .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after {
+                    background-color: #ffffff;
+                }
+            }
+            &__item{
+                list-style-type: none;
+                a{
+                    color:#ffffff;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    transition: color .2s;
+                    &:hover{
+                        color:$themeColor;
+                    }
+                }
+                &:last-child{
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 750px) {
+    .main-header{
+        .page-header{
+            .page-nav{
+                .main-nav{
+                    display: flex;
+                }
+                &__item{
+                    list-style-type: none;
+                    padding-right: 3rem;
+                    a{
+                        color:$navFontColor;
+                    }
+                    &:last-child{
+                        padding: 0;
+                    }
+                }
+                .hamburger{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+  

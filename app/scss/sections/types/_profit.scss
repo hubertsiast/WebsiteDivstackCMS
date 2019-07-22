@@ -1,0 +1,38 @@
+.section{  
+    &__profit{
+        .profits__image img{
+            width: 100%;
+        }
+        .profits__container{
+            display: flex;
+            flex-direction: column;
+            &--item{
+                color:#444444;
+                width: 100%;
+                padding-top: 50px;
+                .icon{
+                    font-size: 28px;
+                    margin-bottom: 19px;
+                }
+                h3{
+                    font-size: 18px;
+                    position: relative;
+                    margin: 0;
+                    &::after{
+                        content: '';
+                        background: #808080;
+                        width: 27px;
+                        height: 1px;
+                        position: absolute;
+                        bottom: -11px;
+                        left: 2px;
+                    }
+                }
+                p{
+                    padding-top: 14px;
+                    color:#808080;
+                }
+            }
+        }
+    }
+}

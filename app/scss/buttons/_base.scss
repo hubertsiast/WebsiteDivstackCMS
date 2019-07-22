@@ -1,0 +1,23 @@
+.btn{  
+    cursor: pointer;
+    border-radius: $button-border-radius;
+    padding: $button-padding-y $button-padding-x;
+    margin: $button-margin;
+    transition: all .2s;
+    border: 1px solid transparent;
+    &__text--upercase{
+        text-transform: uppercase;
+    }
+    &__text{
+        transition: all .2s;
+        display: block;
+        text-align: center;
+        font-size: $button-font-size;
+        font-weight: $button-font-weight;
+    }
+}
+@media (min-width: 750px) {
+    .btn{
+        max-width: 150px;
+    }
+}

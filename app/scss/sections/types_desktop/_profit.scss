@@ -1,0 +1,18 @@
+.section{  
+    &__profit{
+        .section__inner{
+            display: flex;  
+        }
+        .profits__container{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            width: 100%;
+            max-width: 650px;
+            &--item{
+                max-width: 290px;
+                padding-right: 30px;
+            }
+        }
+    }
+}

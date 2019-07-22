@@ -1,0 +1,66 @@
+// Settings
+// ==================================================
+$container-padding-x: 15px;
+$container-padding-y: 0;
+$container-max-width: 1250px;
+
+
+// Base Headers
+// ==================================================
+
+// Headers types
+// ==================================================
+
+  
+
+@import "variables.scss";
+@import "hamburgers/hamburgers.scss";
+@import "buttons/buttons.scss";
+@import "headers/headers.scss";
+@import "sections/sections.scss";
+@import "fonts.scss";
+
+@import "nav.scss";
+@import "footer.scss";
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+}
+
+.single-icon{
+    margin: 5px;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: $container-max-width;
+    padding: $container-padding-y $container-padding-x;
+}
+
+.text__awarded{
+    &--color{
+        color:$themeColor;
+    }
+    &--bold{
+        font-weight: 700;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+.social-icons{
+    a{
+        opacity: .6;
+        transition: opacity .2s;
+        color:#ffffff;
+        &:hover{
+            opacity: 1;
+        }
+    }
+}

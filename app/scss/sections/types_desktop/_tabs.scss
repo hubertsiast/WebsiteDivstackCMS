@@ -1,0 +1,37 @@
+.section__tabs{
+    &--header{
+        border-top: 1px solid #ededed;
+        border-bottom: 1px solid #ededed;
+        margin: 20px 0;
+        &.container{
+            margin: 0 auto;
+            max-width: $container-max-width;
+            padding: $container-padding-y $container-padding-x;
+        }
+        ol{
+            flex-direction: row;
+        }
+    }
+    &--container{
+        .single-tab{
+            &--text{
+                h3{
+                    margin-top: 0;
+                }
+            }
+            &__inner{
+                display: flex;
+                >div{
+                    padding: 80px 0;
+                }
+            }
+            &--image {
+                display: flex;
+                justify-content: flex-end;
+                img{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}

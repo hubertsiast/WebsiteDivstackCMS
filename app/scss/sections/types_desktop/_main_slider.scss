@@ -1,0 +1,25 @@
+.main_slider{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h4, h3, p{
+        max-width: 940px;
+    }
+    h4{
+        font-size: 24px;
+    }
+    h3{
+        font-size: 60px;
+    }
+    p{
+        font-size: 16px;
+        padding: 0;
+    }
+    &__items{
+        &--btn{
+            flex-direction: row;
+        }
+    }
+}

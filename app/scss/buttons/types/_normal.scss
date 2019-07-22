@@ -1,0 +1,14 @@
+.btn--normal {
+    background-color: $themeColor;
+    border: 1px solid transparent;
+    .btn__text{
+        color:#ffffff;
+    }
+    &:hover{
+        background-color: transparent;
+        border: 1px solid $themeColor;
+        .btn__text{
+            color:$themeColor;
+        }
+    }
+} 

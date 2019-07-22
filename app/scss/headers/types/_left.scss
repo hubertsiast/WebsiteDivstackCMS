@@ -1,0 +1,10 @@
+.section__header{  
+    &--left{
+        padding-top:$header__left-padding-top;
+        max-width: 650px;
+        p{
+            color:#808080;
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.section{  
+    &__about-us{
+        >.container{
+            display: flex;
+            flex-direction: column-reverse;
+            padding: 0;
+            >section:last-child{
+                padding-bottom: 90px;
+            }
+        }
+        &--image img{
+            width: 100%;
+            height: auto;
+        }
+        &--inner{
+            font-size: 14px;
+            color:#8c8c8c;
+        }
+    }
+}

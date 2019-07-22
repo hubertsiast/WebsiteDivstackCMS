@@ -1,0 +1,17 @@
+.section__header{  
+    h3, h1{
+        margin: 0;
+    }
+    h3{
+        font-size: 10px;
+        text-transform: uppercase;
+        color:#808080;
+        font-weight: 500;
+    }
+    h1{
+        font-size: 30px;
+        color:#444444;
+        font-weight: 600;
+        line-height: 1.1;
+    }
+}

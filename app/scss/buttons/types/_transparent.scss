@@ -1,0 +1,14 @@
+.btn--transparent {
+    background-color: transparent;
+    border: 1px solid $themeColor;
+    .btn__text{
+        color:$themeColor;
+        font-weight: 500;
+    }
+    &:hover{
+        background:$themeColor;
+        .btn__text{
+            color:#ffffff;
+        }
+    }
+} 

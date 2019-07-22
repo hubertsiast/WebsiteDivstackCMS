@@ -1,0 +1,25 @@
+@charset "UTF-8";
+// Settings
+// ==================================================
+$header__center-padding-x: 0;
+$header__center-padding-y: 80px;
+$header__center-after-width: 41px;
+$header__center-after-height: 3px;
+$header__center-after-border-radius: 1.5px;
+$header__center-after-bottom:-20px;
+$header__center-before-width: 57px;
+$header__center-before-height: 1px;
+$header__center-before-BackGroundColor: #e8e8e8;
+$header__center-before-border-radius: 1.5px;
+$header__center-before-bottom:-19px;
+
+$header__left-padding-top: 90px;
+
+// Base Headers
+// ==================================================
+@import "base";
+
+// Headers types
+// ==================================================
+@import "types/center";
+@import "types/left";

@@ -1,0 +1,41 @@
+.section{  
+    &__about-us{
+        >.container{
+            display: flex;
+            flex-direction: row;
+            padding: $container-padding-y $container-padding-x;
+        }
+        >section{
+            padding-bottom: 90px;
+        }
+        &--image {
+            position: relative;
+            top: -43px;
+            right: -37px;
+            padding-right: 37px;
+            .image-item{
+                position: relative;
+                img{
+                    max-width: 420px;
+                    height: auto;
+                    position: relative;
+                    z-index: 1;
+                }
+                &::before{
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    background: $themeColor;
+                    position: absolute;
+                    top: -39px;
+                    left: -38px;
+                    z-index: 0;
+                }
+            }
+        }
+        &--inner{
+            font-size: 14px;
+            color:#8c8c8c;
+        }
+    }
+}

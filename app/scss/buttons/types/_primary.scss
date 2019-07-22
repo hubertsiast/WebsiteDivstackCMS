@@ -1,0 +1,12 @@
+.btn--primary{
+    background-color: #ffffff;
+    .btn__text{
+        color:$themeColor;
+    }
+    &:hover{
+        background-color:$themeColor;
+        .btn__text{
+            color:#ffffff;
+        }
+    }
+}

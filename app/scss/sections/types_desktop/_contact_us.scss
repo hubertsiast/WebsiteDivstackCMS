@@ -1,0 +1,17 @@
+.section__contact_us{
+    &__text{
+        font-size: 30px;
+    }
+    &__input_group{
+        bottom: -32px;
+        input, .btn--normal{
+            font-size: 18px;
+            padding: 21px 45px;
+        }
+        input{
+            padding-left:15px; 
+            max-width: 280px;
+            width: 100%;            
+        }
+    }
+}

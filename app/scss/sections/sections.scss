@@ -1,0 +1,29 @@
+@charset "UTF-8";
+// Settings
+// ==================================================
+$header-padding-x: 10px;
+
+// Base Headers
+// ==================================================
+@import "base";
+
+// Headers types
+// ==================================================
+@import "types/about_us";
+@import "types/main_slider";
+@import "types/profit";
+@import "types/portfolio";
+@import "types/tabs";
+@import "types/contact_us";
+@import "types/team";
+
+@media (min-width: 750px) {
+    @import "types_desktop/about_us";
+    @import "types_desktop/main_slider";
+    @import "types_desktop/profit";
+    @import "types_desktop/portfolio";
+    @import "types_desktop/tabs";
+    @import "types_desktop/contact_us";
+    @import "types_desktop/team";
+}
+  

@@ -1,0 +1,19 @@
+@charset "UTF-8";
+// Settings
+// ==================================================
+$button-padding-x: 40px;
+$button-padding-y: 12px;
+$button-margin: 5px;
+$button-border-radius: 21px;
+$button-font-size: 13px;
+$button-font-weight: 500;
+
+// Base Buttons
+// ==================================================
+@import "base";
+
+// Buttons types
+// ==================================================
+@import "types/normal";
+@import "types/primary";
+@import "types/transparent";
