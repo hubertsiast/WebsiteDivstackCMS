@@ -1,13 +1,68 @@
-footer{
-    background: $footerBackgroundColor;
-    color:$footerFontColor;
-    text-align: center;
-    padding: 16px 0px;
+.main__footer{
     margin-top: 30px;
-    a{
-        color:$footerFontColor;
-        &:hover{
-            text-decoration: underline;
+    &--info{
+        background: #303030;
+        >div{
+            display: flex;
+        }
+        .logo__section, .info__section{
+            padding: 50px 30px;
+            display: flex;
+        }
+        .logo__section{
+            flex-grow: 1;
+            justify-content: flex-end;
+            img{
+                filter: grayscale(100%);
+                max-width: 130px;
+                height: auto;
+            }
+        }
+        .info__section{
+            flex-grow: 5;
+            &--item{
+                max-width: 200px;
+                padding: 0 70px;
+                h3, p{
+                    color:#6b6b6b;
+                }
+                p{
+                    padding: 10px 0;
+                }
+                .input_group{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    input{
+                        background: transparent;
+                        border-radius: 18px;
+                        border: 1px solid #575757;
+                        font-size: 13px;
+                        padding: 10px 40px 10px 10px;
+                        width: 100%;
+                        color:#4a4a4a;
+                    }
+                    button{
+                        position: absolute;
+                        border:0;
+                        right: 20px;
+                        color:#696969;
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    }
+    &--copyright{
+        background: $footerBackgroundColor;
+        color: $footerFontColor;
+        text-align: center;
+        padding: 16px 0px;
+        a{
+            color:$footerFontColor;
+            &:hover{
+                text-decoration: underline;
+            }
         }
     }
 }

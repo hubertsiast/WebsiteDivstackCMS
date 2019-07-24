@@ -24,3 +24,27 @@ function getCurrentTab(tab){
     }
     return tab.attr('class');
 }
+
+$('.home-button').click(function () {
+    $.scrollTo($('body'), 500);
+});
+
+$('.team-button').click(function () {
+    $pos = $('.section__team').position();
+    $.scrollTo($pos.top - 88, 500);
+});
+
+$('.portfolio-button').click(function () {
+    $pos = $('.section__portfolio').position();
+    $.scrollTo($pos.top - 88, 500);
+});
+
+$('.contact-button').click(function () {
+    $pos = $('.section__contact_us').position();
+    $.scrollTo($pos.top - 88, 500);
+});
+
+$('.more-button').click(function () {
+    $pos = $('.section__about-us').position();
+    $.scrollTo($pos.top - 88, 500);
+});

@@ -21,6 +21,14 @@
         padding: 23px 0px;
         border-top: 1px solid #d4d4d4;
         border-bottom: 1px solid #d4d4d4;
+        &.sticky{
+            position: fixed;
+            width: 100%;
+            background: #fff;
+            z-index: 20;
+            top: 0;
+            border-color: #eeeeee;
+        }
         >div{
             display: flex;
             justify-content: space-between;

@@ -23,12 +23,22 @@ $container-max-width: 1250px;
 @import "nav.scss";
 @import "footer.scss";
 
+body, html{
+    overflow-x: hidden;
+}
 body{
-    margin: 0;
-    padding: 0;
     border: 0;
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    margin: 14px 0;
 }
 
 .single-icon{

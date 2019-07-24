@@ -19,9 +19,9 @@
                         <a href="mailto:kontakt@divstack.pl"><i class="far fa-envelope single-icon"></i>kontakt@divstack.pl</a>
                     </div>
                 </div>
-                <div class="social-icons">
+                <!--<div class="social-icons">
                     <a href="https://facebook.com"><i class="fab fa-facebook-square single-icon"></i></a>
-                </div>
+                </div>-->
             </div>
         </div>
         <div class="page-header">
@@ -31,11 +31,10 @@
                 </div>
                 <nav class="page-nav">
                     <ul class="main-nav">
-                        <li class="page-nav__item"><a href="#">Home</a></li>
-                        <li class="page-nav__item"><a href="#">Portfolio</a></li>
-                        <li class="page-nav__item"><a href="#">Blog</a></li>
-                        <li class="page-nav__item"><a href="#">Divstack<span class="text__awarded--color">cms</span></a></li>
-                        <li class="page-nav__item"><a href="#">Kontakt</a></li>
+                        <li class="page-nav__item"><a href="#" class="home-button">Home</a></li>
+                        <li class="page-nav__item"><a href="#" class="portfolio-button">Portfolio</a></li>
+                        <li class="page-nav__item"><a href="#" class="team-button">Zespół</a></li>
+                        <li class="page-nav__item"><a href="#" class="contact-button">Kontakt</a></li>
                     </ul>
                     <div class="hamburger hamburger--slider">
                         <div class="hamburger-box">
@@ -53,10 +52,10 @@
     </div>
     <div class="main_slider__items--btn">
         <div class="btn btn--normal">
-            <span class="btn__text btn__text--upercase">Dowiedz się więcej</span>
+            <span class="btn__text btn__text--upercase more-button">Dowiedz się więcej</span>
         </div>
         <div class="btn btn--primary">
-            <span class="btn__text btn__text--upercase">Skontaktuj się z nami</span>
+            <span class="btn__text btn__text--upercase contact-button">Skontaktuj się z nami</span>
         </div>
     </div>
 </section>
@@ -69,14 +68,14 @@
             <header class="section__header section__header--left">
                 <div class="container">
                     <h3>Kilka słów</h3>
-                    <h1>O naszej <span class="text__awarded--color">Agencji</span></h1>
+                    <h1>O przebiegu <span class="text__awarded--color">Współpracy</span></h1>
                 </div>
             </header>
             <section class="section__about-us--inner">
                 <div class="container">
                     <p>Lorem ips illud nonummy, novum tation et his. Royal scriptaset patrioque scribentur, at pro fugit erts verter emmolestiae, sed et vivendo ali Lorem ipsum eillud nonu here mmy, novum tation et scripta patrioque scriben tur Quisque ligulas ipsum, euismod atras vulputate iltricies. Coordinates for abs po oordi nates for abs positioning the closest position.</p>
                     <div class="btn btn--transparent">
-                        <span class="btn__text btn__text--upercase">Dowiedz się więcej</span>
+                        <span class="btn__text btn__text--upercase contact-button">Skontaktuj się z nami</span>
                     </div>
                 </div>
             </section>
@@ -128,14 +127,14 @@
             </div>
         </header>
         <section class="section__inner">
-            <section class="projects__switcher--container">
+            <!--<section class="projects__switcher--container">
                 <ol class="projects__switcher">
                     <li class="projects__switcher--item"><a href="#">Wszystko</a></li>
                     <li class="projects__switcher--item"><a href="#">Strony wizytówkowe</a></li>
                     <li class="projects__switcher--item"><a href="#">Blogi</a></li>
                     <li class="projects__switcher--item"><a href="#">Sklepy internetowe</a></li>
                 </ol>
-            </section>
+            </section>-->
             <section class="projects__container">
                 <div class="projects__container--item" style="background-image: url('assets/img/projects/1.png');"><a href="http://zimowaponiewierka.pl/" target="_blank"><div class="more"></div></a></div>
                 <div class="projects__container--item" style="background-image: url('assets/img/projects/2.png');"><a href="https://hubciodx3.github.io/CompanyPage/" target="_blank"><div class="more"></div></a></div>
@@ -150,9 +149,9 @@
 <section class="section__tabs">
     <header class="section__tabs--header">
         <ol class="container">
-            <li class="first"><i></i><p>O tym co <span class="text__awarded--color">zyskujesz</span></p></li>
-            <li class="second active"><i></i><p>Funkcjonalności <span class="text__awarded--bold">DIVSTACK<span class="text__awarded--color">CMS</span></span></p></li>
-            <li class="third"><i></i><p>Historia naszej <span class="text__awarded--color">Agencji</span></p></li>
+            <li class="first"><p><i class="fas fa-dollar-sign"></i> O tym co <span class="text__awarded--color">zyskujesz</span></p></li>
+            <li class="second active"><p><i class="fas fa-tachometer-alt"></i> Funkcjonalności <span class="text__awarded--bold">DIVSTACK<span class="text__awarded--color">CMS</span></span></p></li>
+            <li class="third"><p><i class="fas fa-book"></i> Historia naszej <span class="text__awarded--color">Agencji</span></p></li>
         </ol>
     </header>
     <section class="section__tabs--container container">
@@ -187,6 +186,9 @@
                     <p>Nasz system został stworzony o technologię ASP.NET Core, jest to technologia rozwijana przez firmę Microsoft. Tworząc nasz system zadbaliśmy o to aby mało zaawansowany użytkownik poradził sobie z obsługą panelu.</p>
                     <p>Nasz system jest dostosowany pod tworzenie blogów i stron wizytówkowych. Lekkość całego systemu sprawia, że jest on dobrze pozycjonowany w wyszukiwarkach internetowych.</p>
                 </div>
+                <div class="single-tab--image">
+                    <img src="assets/img/dashboard.png" alt="">
+                </div>
             </div>
         </div>
     </section>
@@ -196,12 +198,14 @@
         <h3>Wpisz swój numer telefonu, a my się <span class="text__awarded--color">z tobą</span> skontaktujemy!</h3>
     </div>
     <div class="section__contact_us__input_group">
-        <input type="text" placeholder="Twój numer telefonu">
-        <div>
-            <div class="btn btn--normal">
-                <span class="btn__text">Potwierdź</span>
+        <form action="">
+            <input type="text" placeholder="Twój numer telefonu">
+            <div>
+                <div class="btn btn--normal">
+                    <span class="btn__text">Potwierdź</span>
+                </div>
             </div>
-        </div>
+        </form>
     </div>
 </section>
 <section class="section__team">
@@ -243,13 +247,51 @@
                     </div>
                 </div>
             </div>
+            <div class="section__team--member" style="background-image: url('assets/img/team/krogowski.png');">
+                <div class="hidden_section">
+                    <div class="hidden_section--information">
+                        <h3>Jakub Rogowski</h3>
+                        <h4>Kierownik DS. Marketingu</h4>
+                        <p>Szukam klientów oraz jestem specem od marketingu.</p>
+                    </div>
+                    <div class="hidden_section--social social-icons">
+                        <a href="https://www.facebook.com/Majorcezar" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://m.me/Majorcezar" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
-</section>   <footer>
-      <div class="container">2019 &copy; Wszelkie prawa zastrzeżone. Strona stworzona przez: <a href="http://www.divstack.pl">Divstack</a></div>
-   </footer>
-   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-   <script src="js/hamburgers.js"></script>
-   <script src="js/app.js"></script>
-   </body>
- </html>
+</section><footer class="main__footer">
+    <section class="main__footer--info">
+        <div class="container">
+            <div class="logo__section">
+                <div class="img-container"><img src="assets/logo.png" alt=""></div>
+            </div>
+            <div class="info__section">
+                <section class="info__section--item">
+                    <h3>Kontakt</h3>
+                    <p>Kontakt@divstack.pl</p>
+                </section>
+                <section class="info__section--item">
+                    <h3>Newsletter</h3>
+                    <p>Zapisz się na newsletter, dzięki temu otrzymasz informację o promocjach.</p>
+                    <div class="input_group">
+                        <input type="text" placeholder="Adres email...">
+                        <button><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+    <section class="main__footer--copyright">
+        <div class="container">2019 &copy; Wszelkie prawa zastrzeżone. Strona stworzona przez: <a href="http://www.divstack.pl">Divstack</a></div>
+    </section>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/hamburgers.js"></script>
+<script src="js/app.js"></script>
+<script src="js/jquery.scrollTo.min.js"></script>
+</body>
+
+</html>
