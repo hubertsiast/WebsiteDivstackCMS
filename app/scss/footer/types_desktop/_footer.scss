@@ -1,0 +1,18 @@
+.main__footer{
+    &--info{
+        >div{
+            flex-direction: row;
+        }
+        .logo__section, .info__section{
+            padding: 50px 30px;
+            flex-direction: row;
+        }
+        .info__section{
+            flex-grow: 5;
+            &--item{
+                max-width: 200px;
+                padding: 0 70px;
+            }
+        }
+    }
+}
