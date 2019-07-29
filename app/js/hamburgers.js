@@ -5,8 +5,9 @@ var header = $(".page-header");
 var stickyClass = "sticky";
 
 hamburger.click(function(){
+    $('html, body').toggleClass('scroll--lock');
     $(this).toggleClass("is-active");
-    nav.toggleClass("is-open");
+    nav.toggleClass("is-open");    
 });
 
 $(window).scroll(function() {

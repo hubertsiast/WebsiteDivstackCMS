@@ -1,33 +1,25 @@
 .main-header{
-    .contact-wrapper{
-        background: #343434;
-        padding: 8px 0;
-        &>div{
-            display: flex;
-            justify-content: space-between;
-        }
-        .contact-informations{
-            .contact-information a{
-                color: #ffffff;
-                opacity: .2;
-                transition: opacity .3s;
-                &:hover{
-                    opacity: 1;
-                }
-            }
-        }
-    }
+    position: relative;
     .page-header{
         padding: 23px 0px;
         border-top: 1px solid #d4d4d4;
         border-bottom: 1px solid #d4d4d4;
+        background: #ffffff;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 10;
         &.sticky{
             position: fixed;
             width: 100%;
             background: #fff;
             z-index: 20;
-            top: 0;
+            top:-200px;
             border-color: #eeeeee;
+            animation-name: up_to_down;
+            animation-duration: .5s;
+            animation-delay: .5s;
+            animation-fill-mode: forwards;
         }
         >div{
             display: flex;
@@ -44,7 +36,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            z-index: 10;
+            z-index: 41;
             .main-nav{
                 margin: 0;
                 padding: 0;
@@ -58,7 +50,7 @@
                     background: #000000;
                     height: 100vh;
                     width: 100vw;
-                    position: absolute;
+                    position: fixed;
                     top:0;
                     left: 0;
                     .page-nav__item{
@@ -88,30 +80,4 @@
             }
         }
     }
-}
-
-@media (min-width: 750px) {
-    .main-header{
-        .page-header{
-            .page-nav{
-                .main-nav{
-                    display: flex;
-                }
-                &__item{
-                    list-style-type: none;
-                    padding-right: 3rem;
-                    a{
-                        color:$navFontColor;
-                    }
-                    &:last-child{
-                        padding: 0;
-                    }
-                }
-                .hamburger{
-                    display: none;
-                }
-            }
-        }
-    }
-}
-  
+}  

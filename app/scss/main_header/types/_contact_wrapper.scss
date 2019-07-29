@@ -1,0 +1,20 @@
+.main-header{
+    .contact-wrapper{
+        background: #343434;
+        padding: 8px 0;
+        &>div{
+            display: flex;
+            justify-content: space-between;
+        }
+        .contact-informations{
+            .contact-information a{
+                color: #ffffff;
+                opacity: .2;
+                transition: opacity .3s;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}  

@@ -18,13 +18,16 @@ $container-max-width: 1250px;
 @import "buttons/buttons.scss";
 @import "headers/headers.scss";
 @import "sections/sections.scss";
-@import "fonts.scss";
+@import "main_header/nav.scss";
 
-@import "nav.scss";
+@import "fonts.scss";
 @import "footer/footer.scss";
 
 body, html{
     overflow-x: hidden;
+}
+.scroll--lock{
+    overflow: hidden;
 }
 body{
     border: 0;

@@ -1,0 +1,22 @@
+.main-header{
+    .page-header{
+        .page-nav{
+            .main-nav{
+                display: flex;
+            }
+            &__item{
+                list-style-type: none;
+                padding-right: 3rem;
+                a{
+                    color:$navFontColor;
+                }
+                &:last-child{
+                    padding: 0;
+                }
+            }
+            .hamburger{
+                display: none;
+            }
+        }
+    }
+}
