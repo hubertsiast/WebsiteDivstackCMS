@@ -5,11 +5,13 @@ var activeClassName = "active";
 var tabsHeaderChild = "li";
 var tabsContentChild = ".single-tab";
 
+var pageHeaderHeight = $(".page-header").outerHeight();
+
 tabsHeader.find(tabsHeaderChild).click(function(){
     removeCurrentClass(activeClassName, tabsHeader, tabsHeaderChild);
-    var currentTab = getCurrentTab($(this));
+    currentTab = getCurrentTab($(this));
     $(this).addClass(activeClassName);
-    var classNameOfTab = "." + currentTab;
+    classNameOfTab = "." + currentTab;
     removeCurrentClass(activeClassName, tabsContent, tabsContentChild);
     tabsContent.find(classNameOfTab).addClass(activeClassName);
 });
@@ -25,26 +27,14 @@ function getCurrentTab(tab){
     return tab.attr('class');
 }
 
-$('.home-button').click(function () {
-    $.scrollTo($('body'), 500);
-});
+$('.home-button').click(function () { scrollToElement('body'); });
+$('.portfolio-button').click(function () { scrollToElement('.section__portfolio'); });
+$('.contact-button').click(function () { scrollToElement('.section__contact_us'); });
+$('.team-button').click(function () { scrollToElement('.section__team'); });
+$('.more-button').click(function () { scrollToElement('.section__about-us'); });
 
-$('.team-button').click(function () {
-    $pos = $('.section__team').position();
-    $.scrollTo($pos.top - 88, 500);
-});
-
-$('.portfolio-button').click(function () {
-    $pos = $('.section__portfolio').position();
-    $.scrollTo($pos.top - 88, 500);
-});
-
-$('.contact-button').click(function () {
-    $pos = $('.section__contact_us').position();
-    $.scrollTo($pos.top - 88, 500);
-});
-
-$('.more-button').click(function () {
-    $pos = $('.section__about-us').position();
-    $.scrollTo($pos.top - 88, 500);
-});
+function scrollToElement(sectionClass){
+    toggleNav('1');
+    position = $(sectionClass).position();
+    $.scrollTo(position.top - pageHeaderHeight, 500);
+}
