@@ -635,9 +635,6 @@
         font-size: 16px;
         padding: 5px; }
 
-.section__pracing > #shops {
-  display: none; }
-
 .section__pracing--buttons {
   display: -webkit-box;
   display: -ms-flexbox;
