@@ -1,0 +1,21 @@
+.section__pracing{
+    &--inner{
+        align-items: center;
+    }
+    &--single:nth-child(odd){
+        .section__pracing--header, p{
+            font-size: 90%;
+        }
+        .section__pracing--price-group{
+            .price-tag{
+                font-size: 2.5rem;
+                sub{
+                    font-size: .75rem;
+                }
+            }
+        }
+    }
+    &--single:nth-child(even){
+        z-index: 1;
+    }
+}

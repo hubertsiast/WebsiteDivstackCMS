@@ -38,3 +38,11 @@ function scrollToElement(sectionClass){
     position = $(sectionClass).position();
     $.scrollTo(position.top - pageHeaderHeight, 500);
 }
+
+$(".section__pracing--buttons > .btn").click(function(){
+    $(".section__pracing--buttons").find(".btn").removeClass("active");
+    $(this).addClass("active");
+    currentTab = $(this).attr('id');
+    $(".section__pracing--inner").fadeOut();
+    $(".section__pracing--inner#" + currentTab).fadeIn();
+});

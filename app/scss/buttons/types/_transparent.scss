@@ -5,7 +5,7 @@
         color:$themeColor;
         font-weight: 500;
     }
-    &:hover{
+    &.active, &:hover{
         background:$themeColor;
         .btn__text{
             color:#ffffff;

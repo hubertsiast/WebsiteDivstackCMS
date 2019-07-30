@@ -1,6 +1,7 @@
 @import "https://use.fontawesome.com/releases/v5.6.3/css/all.css";
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 @import "https://fonts.googleapis.com/css?family=Montserrat:700";
+@import "https://fonts.googleapis.com/css?family=Roboto:700";
 .hamburger {
   padding: 15px 15px;
   display: inline-block;
@@ -168,9 +169,9 @@
   .btn--transparent .btn__text {
     color: #ff7400;
     font-weight: 500; }
-  .btn--transparent:hover {
+  .btn--transparent.active, .btn--transparent:hover {
     background: #ff7400; }
-    .btn--transparent:hover .btn__text {
+    .btn--transparent.active .btn__text, .btn--transparent:hover .btn__text {
       color: #ffffff; }
 
 .section__header h3, .section__header h1 {
@@ -634,6 +635,142 @@
         font-size: 16px;
         padding: 5px; }
 
+.section__pracing > #shops {
+  display: none; }
+
+.section__pracing--buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .section__pracing--buttons .btn {
+    padding: 7px 25px; }
+
+.section__pracing--inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.section__pracing--single {
+  width: 100%;
+  max-width: 300px;
+  margin: 30px 0;
+  padding: 30px 0;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 1px 59.4px 0.6px rgba(14, 26, 53, 0.15);
+          box-shadow: 0px 1px 59.4px 0.6px rgba(14, 26, 53, 0.15);
+  border-radius: 15px;
+  position: relative; }
+  .section__pracing--single .info {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 3px 0;
+    background: #ff7400;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+    color: #ffffff; }
+  .section__pracing--single:nth-child(even) {
+    padding-top: 40px; }
+
+.section__pracing--title {
+  color: #444444;
+  font-size: 24px;
+  margin-bottom: .25rem; }
+
+.section__pracing--subtext {
+  margin: 0;
+  color: #808080;
+  font-weight: 500; }
+
+.section__pracing--price-group {
+  margin: 20px 0;
+  position: relative; }
+  .section__pracing--price-group .price-tag {
+    color: #ff7400;
+    font-size: 3rem;
+    letter-spacing: -.1875rem;
+    font-weight: 200;
+    display: inline-block;
+    position: relative;
+    line-height: 1;
+    -webkit-transition: opacity .4s;
+    transition: opacity .4s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .section__pracing--price-group .price-tag sup {
+      position: absolute;
+      color: inherit;
+      top: .1875rem;
+      font-size: 1.25rem; }
+    .section__pracing--price-group .price-tag sub {
+      display: inline-block;
+      min-width: 1.8125rem;
+      font-size: .75rem; }
+    .section__pracing--price-group .price-tag sub, .section__pracing--price-group .price-tag sup {
+      letter-spacing: 0; }
+    .section__pracing--price-group .price-tag sup::before {
+      content: ','; }
+    .section__pracing--price-group .price-tag * {
+      font-weight: 400;
+      margin-left: .125rem; }
+
+.section__pracing--price-more {
+  opacity: 0;
+  position: absolute;
+  top: 0; }
+
+.section__pracing--price-more, .section__pracing--price {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  width: 100%;
+  cursor: default; }
+
+.section__pracing--header {
+  text-align: center;
+  padding-bottom: 30px; }
+  .section__pracing--header:hover .section__pracing--price {
+    opacity: 0; }
+  .section__pracing--header:hover .section__pracing--price-more {
+    opacity: 1; }
+
+.section__pracing--body {
+  padding: 0 30px; }
+  .section__pracing--body__single p::before {
+    margin: 2px;
+    margin-right: 5px;
+    margin-top: -1px;
+    font-family: "Font Awesome 5 Free";
+    content: "\f058";
+    font-size: 20px;
+    color: #ff7400; }
+  .section__pracing--body__single.none p::before {
+    content: "\f057";
+    color: #808080; }
+  .section__pracing--body__single p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #808080;
+    margin: 7px 0; }
+
 @media (min-width: 750px) {
   .section__about-us > .container {
     display: -webkit-box;
@@ -768,7 +905,19 @@
             flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; } }
+            justify-content: center; }
+  .section__pracing--inner {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .section__pracing--single:nth-child(odd) .section__pracing--header, .section__pracing--single:nth-child(odd) p {
+    font-size: 90%; }
+  .section__pracing--single:nth-child(odd) .section__pracing--price-group .price-tag {
+    font-size: 2.5rem; }
+    .section__pracing--single:nth-child(odd) .section__pracing--price-group .price-tag sub {
+      font-size: .75rem; }
+  .section__pracing--single:nth-child(even) {
+    z-index: 1; } }
 
 .main-header {
   position: relative; }
