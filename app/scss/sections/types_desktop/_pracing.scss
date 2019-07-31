@@ -1,6 +1,6 @@
 .section__pracing{
     &--inner{
-        align-items: center;
+        flex-direction: row;
     }
     &--single:nth-child(odd){
         .section__pracing--header, p{
