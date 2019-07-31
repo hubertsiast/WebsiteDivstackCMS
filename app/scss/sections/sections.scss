@@ -17,6 +17,7 @@ $header-padding-x: 10px;
 @import "types/contact_us";
 @import "types/team";
 @import "types/pracing";
+@import "types/cooperation";
 
 @media (min-width: 750px) {
     @import "types_desktop/about_us";
@@ -27,5 +28,6 @@ $header-padding-x: 10px;
     @import "types_desktop/contact_us";
     @import "types_desktop/team";
     @import "types_desktop/pracing";
+    @import "types_desktop/cooperation";
 }
   

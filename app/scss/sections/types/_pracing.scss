@@ -6,10 +6,33 @@
             padding: 7px 25px;
         }
     }
+    &--more-info{
+        display: flex;
+        flex-direction: column;
+        p{
+            color:#e1e1e2;
+            a{
+                opacity: .2;
+                color:#000000;
+                transition: all .3s;
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+        &::before{
+            content: '';
+            max-width: 200px;
+            width: 100%;
+            height: 1px;
+            background: #e1e1e2;
+        }
+    }
     &--inner{
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
     }
     &--single{
         $borderRadius: 15px;

@@ -1,0 +1,9 @@
+.section__cooperation{
+    &--inner{
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    &--single{
+        padding: 15px 20px;
+    }
+}

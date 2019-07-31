@@ -645,6 +645,30 @@
   .section__pracing--buttons .btn {
     padding: 7px 25px; }
 
+.section__pracing--more-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .section__pracing--more-info p {
+    color: #e1e1e2; }
+    .section__pracing--more-info p a {
+      opacity: .2;
+      color: #000000;
+      -webkit-transition: all .3s;
+      transition: all .3s; }
+      .section__pracing--more-info p a:hover {
+        opacity: 1; }
+  .section__pracing--more-info::before {
+    content: '';
+    max-width: 200px;
+    width: 100%;
+    height: 1px;
+    background: #e1e1e2; }
+
 .section__pracing--inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -652,8 +676,13 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .section__pracing--single {
   width: 100%;
@@ -767,6 +796,29 @@
     display: flex;
     color: #808080;
     margin: 7px 0; }
+
+.section__cooperation--inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.section__cooperation--single {
+  text-align: center;
+  max-width: 300px;
+  padding-bottom: 40px; }
+  .section__cooperation--single h3 {
+    font-size: 24px; }
+  .section__cooperation--single p {
+    color: #808080; }
+  .section__cooperation--single:last-child {
+    padding-bottom: 0; }
 
 @media (min-width: 750px) {
   .section__about-us > .container {
@@ -904,9 +956,10 @@
         -ms-flex-pack: center;
             justify-content: center; }
   .section__pracing--inner {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
   .section__pracing--single:nth-child(odd) .section__pracing--header, .section__pracing--single:nth-child(odd) p {
     font-size: 90%; }
   .section__pracing--single:nth-child(odd) .section__pracing--price-group .price-tag {
@@ -914,7 +967,17 @@
     .section__pracing--single:nth-child(odd) .section__pracing--price-group .price-tag sub {
       font-size: .75rem; }
   .section__pracing--single:nth-child(even) {
-    z-index: 1; } }
+    z-index: 1; }
+  .section__cooperation--inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .section__cooperation--single {
+    padding: 15px 20px; } }
 
 .main-header {
   position: relative; }
