@@ -14,14 +14,16 @@ $container-max-width: 1250px;
   
 
 @import "variables.scss";
+@import "fonts.scss";
+
 @import "hamburgers/hamburgers.scss";
 @import "buttons/buttons.scss";
 @import "headers/headers.scss";
 @import "sections/sections.scss";
 @import "main_header/nav.scss";
 
-@import "fonts.scss";
 @import "footer/footer.scss";
+@import "messenger_button/messenger_button.scss";
 
 body, html{
     overflow-x: hidden;

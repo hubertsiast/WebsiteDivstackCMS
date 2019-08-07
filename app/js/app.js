@@ -32,6 +32,7 @@ $('.portfolio-button').click(function () { scrollToElement('.section__portfolio'
 $('.contact-button').click(function () { scrollToElement('.section__contact_us'); });
 $('.team-button').click(function () { scrollToElement('.section__team'); });
 $('.more-button').click(function () { scrollToElement('.section__about-us'); });
+$('.pricelist-button').click(function () { scrollToElement('.section__pracing'); });
 
 function scrollToElement(sectionClass){
     toggleNav('1');
@@ -45,4 +46,12 @@ $(".section__pracing--buttons > .btn").click(function(){
     currentTab = $(this).attr('id');
     $(".section__pracing--inner").fadeOut();
     $(".section__pracing--inner#" + currentTab).fadeIn();
+});
+
+$(window).scroll(function() {
+    if ($(document).scrollTop() > 200) {
+        $(".messenger__button").addClass("show");
+    } else {
+        $(".messenger__button").removeClass("show");
+    }
 });
