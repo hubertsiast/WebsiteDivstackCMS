@@ -237,8 +237,9 @@
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
   padding: 0; }
-  .section__about-us > .container > section:last-child {
-    padding-bottom: 90px; }
+
+.section__about-us .section__header {
+  padding-top: 40px; }
 
 .section__about-us--image img {
   width: 100%;
@@ -247,6 +248,10 @@
 .section__about-us--inner {
   font-size: 14px;
   color: #8c8c8c; }
+
+.section__about-us--list {
+  margin: 14px 0;
+  padding-left: 30px; }
 
 .main_slider {
   background-image: url("../assets/img/slider.png");
