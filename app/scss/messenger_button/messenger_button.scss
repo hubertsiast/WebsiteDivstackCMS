@@ -13,6 +13,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: all .3s;
+        &:hover{
+            background: rgb(0, 105, 224);
+        }
     }
     &--icon{
         color:#ffffff;

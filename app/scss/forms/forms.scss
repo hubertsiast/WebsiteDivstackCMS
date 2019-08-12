@@ -1,0 +1,15 @@
+@charset "UTF-8";
+// Base Headers
+// ==================================================
+@import "base";
+
+// Headers types
+// ==================================================
+@import "types/tabs";
+
+// Headers types desktop
+// ==================================================
+@media (min-width: 750px) {
+    @import "types_desktop/tabs";
+}
+  

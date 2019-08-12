@@ -8,14 +8,6 @@ hamburger.click(function(){
     toggleNav();
 });
 
-$(window).scroll(function() {
-    if ($(document).scrollTop() > 200) {
-        header.addClass(stickyClass);
-    } else {
-        header.removeClass(stickyClass);
-    }
-});
-
 function toggleNav(state){
     toggleScrollBar('1');
     if(state == '1'){

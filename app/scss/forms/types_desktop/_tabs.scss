@@ -1,0 +1,15 @@
+.section__tabs{
+    &--container{
+        .single-tab{
+            &--form form{
+                .row{
+                    display: flex;
+                    justify-content: space-around;
+                    .input-group:nth-child(even) {
+                        margin-left: 10px; 
+                    }
+                }
+            }
+        }
+    }
+}

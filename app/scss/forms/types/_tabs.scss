@@ -1,0 +1,41 @@
+.section__tabs{
+    &--container{
+        .single-tab{
+            &__inner--form{
+                display: block;
+            }
+            &--form form{
+                .input-group{
+                    width: 100%;
+                    padding: 8px 0;
+                    display: flex;
+                    flex-direction: column;
+                    input, textarea{
+                        margin-top: 5px;
+                    }
+                    &--label{
+                        color:$navFontColor;
+                    }
+                    &--input{
+                        font-family: 'Roboto', sans-serif;
+                        color:$navFontColor;
+                        background: #ffffff;
+                        height: 42px;
+                        padding: 8px 16px;
+                        border: 1px solid transparent;
+                        box-sizing: border-box;
+                        width: 100%;
+                    }
+                    textarea{
+                        height: 200px;
+                        max-width: 100%;
+                        min-width: 100%;
+                    }
+                    .btn{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

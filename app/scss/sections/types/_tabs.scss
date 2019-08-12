@@ -58,7 +58,7 @@
     &--container{
         .single-tab{
             display: none;
-            &--text{
+            &--text >{
                 h3{
                     color: #444444;
                     font-weight: 600;
@@ -67,6 +67,12 @@
                 p{
                     color:#808080;
                     font-size: 14px;
+                }
+            }
+            &--text{
+                .section__header--left {
+                    padding-top: 0;
+                    padding-bottom: 70px;
                 }
             }
             &--image img{

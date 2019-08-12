@@ -55,3 +55,21 @@ $(window).scroll(function() {
         $(".messenger__button").removeClass("show");
     }
 });
+
+$(window).scroll(function() {
+    showElement("show", ".messenger__button");
+    showElement("sticky", ".page-header");
+});
+
+$(document).ready(function(){
+    showElement("show", ".messenger__button");
+    showElement("sticky", ".page-header");
+});
+
+function showElement(stickyClass, element) {
+    if ($(document).scrollTop() > 200) {
+        $(element).addClass(stickyClass);
+    } else {
+        $(element).removeClass(stickyClass);
+    }
+}
